@@ -1,0 +1,21 @@
+# Dependencies
+__pycache__/
+*.pyc
+.venv/
+
+# Build artifacts
+*.aux
+*.log
+*.out
+
+# Pipeline runtime data (keep structure, ignore content)
+pipeline/data/results/*
+!pipeline/data/results/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*~
