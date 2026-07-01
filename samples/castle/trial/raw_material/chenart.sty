@@ -1,0 +1,103 @@
+\usepackage[scheme=plain]{ctex}
+
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{indentfirst}
+\usepackage{setspace}
+
+\usepackage{amsmath, 
+            amssymb, 
+            upgreek}
+
+% \usepackage{palatino}
+\usepackage{fontspec}
+\setCJKmainfont{FandolFang}
+\usepackage{newpxtext,
+            newpxmath}
+
+
+\usepackage{graphicx,
+            subfigure
+           }
+\graphicspath{{figs/}}
+
+
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{tabularx}
+
+\usepackage{float}
+\usepackage{enumerate, 
+            enumitem}
+\setlist[enumerate]
+    {labelindent = \parindent, 
+    leftmargin   = *, 
+    itemsep      = 0pt, 
+    topsep       = 0pt,
+    parsep       = 0pt
+    }
+\setlist[itemize,1]
+    {labelindent = \parindent, 
+    leftmargin   = *, 
+    itemsep      = 0pt, 
+    topsep       = 0pt,
+    parsep       = 0pt
+    }
+
+\usepackage{color} 
+\usepackage[table]{xcolor} % 引入xcolor包并启用表格选项
+\usepackage{colortbl}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks = true,
+            urlcolor   = red,
+            citecolor  = blue,
+            }
+
+
+
+\usepackage[en-IE]{datetime2}
+\DTMsetup{useregional}
+\DTMlangsetup{ord=raise,abbr}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{1pt} 
+\fancyhf{} %
+\fancyhead[OR,EL]{
+        \itshape\footnotesize
+        Compiled: 
+        \DTMnow}
+%\DTMcurrenttime~\today~~~~~~~ 
+\fancyhead[ER,OL]{\itshape\footnotesize }
+\fancyfoot[C]{\small \thepage/\pageref{LastPage}}
+\AtBeginDocument{\thispagestyle{fancy}}
+
+
+% 引入另一文件的部分内容
+% 但会损失反向搜索功能
+\usepackage{catchfilebetweentags}
+
+
+
+\usepackage[nobottomtitles*]{titlesec}
+\usepackage{needspace}
+% \renewcommand{\bottomtitlespace}{.5\textheight} % default value .2
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}[block] % paragraph应用块风格
+  {\normalfont\normalsize\itshape\bfseries}{(\theparagraph)}{1em}{} % 格式设置
+\titlespacing*{\paragraph} % paragraph间距设置
+                {0pt}
+                {3.25ex plus 1ex minus .2ex}
+                {1.5ex plus .2ex} % 垂直间距
+\renewcommand{\theparagraph}{\arabic{paragraph}} % 重定义paragraph编号样式
+
+
+\usepackage[backend=biber, style=apa]{biblatex}
+\addbibresource{refs.bib}
+
+
+% 脚注出现在页面的底部
+\usepackage[bottom]{footmisc} 
