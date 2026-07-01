@@ -19,3 +19,6 @@ Thumbs.db
 # Editor
 *.swp
 *~
+
+# Samples (large binary files, not pushed)
+samples/
