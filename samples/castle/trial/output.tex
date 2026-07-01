@@ -1,6 +1,6 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage[scheme=plain]{ctex}
-\usepackage[margin=2.5cm]{geometry}
+\usepackage[margin=3cm,top=3.5cm,bottom=3.5cm]{geometry}
 \usepackage{indentfirst}
 \usepackage{setspace}
 \usepackage{fontspec}
@@ -18,19 +18,22 @@
 
 \usepackage[nobottomtitles*]{titlesec}
 \titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
-\titlespacing*{\section}{0pt}{2.5ex}{1.5ex}
+\titlespacing*{\section}{0pt}{3ex}{2ex}
 
 \newcommand{\clerknote}[1]{%
-  \vspace{0.8em}%
+  \vspace{1.2em}%
   {\kaishu\small\textit{书记官按：#1}}%
 }
 
 \newcommand{\sourcenote}[1]{%
-  \par\vspace{0.3em}%
+  \par\vspace{0.5em}%
   {\footnotesize\color{gray}（#1）}%
 }
 
 \usepackage{xcolor}
+
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.6em}
 
 \onehalfspacing
 
@@ -40,7 +43,8 @@
 
 \begin{document}
 \maketitle
-\vspace{-3em}
+\thispagestyle{fancy}
+\vspace{-2em}
 
 \begin{center}
 \small\itshape 源自课程"重返城堡：如何在权力场域中缔结真实的人际关系？"
