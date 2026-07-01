@@ -9,9 +9,12 @@
 
 \usepackage{lastpage}
 \usepackage{fancyhdr}
-\pagestyle{plain}
+\pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
 \fancyhf{}
+\fancyhead[C]{\small\itshape 阅读材料}
+\fancyfoot[C]{\small \thepage}
+\AtBeginDocument{\thispagestyle{fancy}}
 
 \usepackage[nobottomtitles*]{titlesec}
 \titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
@@ -40,7 +43,7 @@
 \vspace{-3em}
 
 \begin{center}
-\small\itshape 阅读材料 · 源自课程"重返城堡：如何在权力场域中缔结真实的人际关系？"
+\small\itshape 源自课程"重返城堡：如何在权力场域中缔结真实的人际关系？"
 \end{center}
 
 \vspace{1em}
