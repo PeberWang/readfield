@@ -1,0 +1,62 @@
+# Dependencies
+__pycache__/
+*.pyc
+.venv/
+
+# Build artifacts
+*.aux
+*.log
+*.out
+*.toc
+
+# ---- 私人物件（原地保留，不入库）----
+.claude/
+logs/
+2026-7-26_改造方案/
+docs/开发备忘录.md
+samples/castle/复盘.md
+
+# ---- 遗留工作文件 ----
+scripts/render.py
+*.bak
+*.old
+
+# ---- blindlab 运行时、凭证与实例数据 ----
+sub-skills/blindlab/.env
+sub-skills/blindlab/output/
+sub-skills/blindlab/tmp/
+sub-skills/blindlab/data/results/
+sub-skills/blindlab/data/skills/
+sub-skills/blindlab/data/scenarios/
+sub-skills/blindlab/skills-archive-examples/
+sub-skills/blindlab/starter-pack.zip
+sub-skills/blindlab/心眼子启动包.txt
+
+# 启动包分发产物（tools/pack_starter.py 生成）
+/starter-pack.zip
+/心眼子启动包.txt
+
+# ---- samples 排除项（版权原件与工作文件）----
+samples/castle/trial/
+samples/castle/tmp/
+samples/castle/*.epub
+samples/castle/castle_full_text.txt
+samples/castle/day-*/*.pdf
+samples/castle/merged/merged_lessons.pdf
+samples/castle/活动课_第一天_shell-log.txt
+samples/castle/rebuild_merged.py
+samples/castle/day-*/render_day*.py
+samples/castle/CUHK参考中英文模板/
+
+# LaTeX 中间文件（每日 _lesson.tex 保留入库，便于复用者自行渲染）
+**/_lesson.aux
+**/_lesson.log
+**/_lesson.out
+**/_lesson.pdf
+**/texput.log
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
