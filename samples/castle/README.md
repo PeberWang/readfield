@@ -22,6 +22,7 @@ ReadField 框架的首次实战。7 天正课 + 2 天活动课，共读人以田
 - `STYLE-GUIDE.md` / `排版注意事项.md`：排版规范的迭代记录。
 - `daily-conclusion.txt`：每天课后发给共读人的总结信。
 - `daily-share/`：课前预热分享卡片（Insight Card）三天实例，含 PNG 成品（子 skill `sub-skills/insight-card/` 的实例）。
+- `starter-pack/`：活动课启动包的交付成品——`starter-pack.zip`（结构归档）与`心眼子启动包.txt`（单文件版，聊天上传用）。这是当时实际分发给共读人的形态；可编辑源文件维护在 `sub-skills/blindlab/starter-pack/`。
 - `scenarios/`：活动课实考题目。`text-based/` 为城堡情境，`real-based/` 为现实情境。
 - `skills/`：活动课共读人作品原件。各小组在营中用 AI 协作设计的 Skill（zip 为提交原格式），组名均为化名。
 

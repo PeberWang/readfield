@@ -32,9 +32,9 @@ sub-skills/blindlab/skills-archive-examples/
 sub-skills/blindlab/starter-pack.zip
 sub-skills/blindlab/心眼子启动包.txt
 
-# 启动包分发产物（tools/pack_starter.py 生成）
-/starter-pack.zip
-/心眼子启动包.txt
+# 启动包分发产物（tools/pack_starter.py 重新生成；castle 当次交付版归档于 samples/castle/starter-pack/）
+sub-skills/blindlab/starter-pack.zip
+sub-skills/blindlab/心眼子启动包.txt
 
 # ---- samples 排除项（版权原件与工作文件）----
 samples/castle/trial/
